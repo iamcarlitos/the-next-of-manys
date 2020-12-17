@@ -1,0 +1,29 @@
+import matplotlib.pyplot as plt
+
+# Set the functions for the Particles Decay (releasing electron and antineutrino)
+
+Prob = 0.8928  # Probability of (Beta -) Decay in K-40
+TimeM = 1  # The time-step for the decay (1 minute)
+
+# Make the Loop
+
+Particle = 200000  # Number of K-40 atoms that an 70 kg man emits per minute!
+Time = 0  # Start of time (0 minutes)
+
+Particle_List = []  # store the value of particles with relationship to time
+Time_List = []  # the amount of time that passes for a particle to decay
+
+while Time <= 60:  # 60 minutes
+    print(Time, Particle)
+    Particle += -Particle * Prob * TimeM
+    Time += TimeM
+    Particle_List.append(Particle)
+    Time_List.append(Time)
+
+# Plot the graph for particle decay
+
+plt.plot(Time_List, Particle_List, "-r")
+plt.xlabel("Time (m) ")
+plt.ylabel("Particles")
+plt.savefig("decay.png", dpi=300)
+plt.show()
