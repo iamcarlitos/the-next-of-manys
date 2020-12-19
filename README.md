@@ -6,9 +6,9 @@
 
 # particle decay
 
-# This is what particle decay of K-40 in the human body
+# This simulation is how many Anti-Neutrinos are being emitted in the body from K-40 in the human body each SECOND!
 
-# 200,000 + atoms of K-40 decay in the body each MINUTE!
+# Approximately 3,333 atoms of K-40 decay in the body each SECOND!
 
 # This project is specifically on Beta - Decay of K-40!
 
